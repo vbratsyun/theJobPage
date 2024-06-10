@@ -1,0 +1,26 @@
+.products {
+  padding: 45px 0;
+}
+
+.products__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+}
+
+.products__title {
+  padding: 0 20px;
+}
+
+.products__list {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.products__controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

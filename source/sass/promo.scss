@@ -1,0 +1,21 @@
+.promo {
+  position: relative;
+  text-align: center;
+  padding: 271px 0 45px 0;
+  background: url("../image/header-background.jpg") no-repeat;
+  background-position: 77% 34%;
+  background-size: 235%;
+  filter: drop-shadow(0 5px 3px rgba($background-white, 0.2));
+}
+
+.promo__title {
+  font-size: 30px;
+  color: $base-text-color;
+  margin-bottom: 20px;
+}
+
+.promo__slogan {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}

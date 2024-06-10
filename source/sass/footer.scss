@@ -1,0 +1,35 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__list {
+  margin: 0 auto;
+}
+
+.footer__social-list {
+  margin: 0 auto 50px;
+}
+
+.footer__location {
+  position: relative;
+}
+
+.footer__map {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  display: block;
+  outline: none;
+}
+
+.footer__map-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  max-height: 223px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

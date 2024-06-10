@@ -1,0 +1,33 @@
+.career {
+  padding: 45px 0;
+  background-color: $background-color;
+}
+
+.career__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.career__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.career__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.career__container {
+  position: relative;
+}
+
+.career__controls {
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+}

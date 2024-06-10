@@ -1,0 +1,13 @@
+.department {
+  padding: 45px 0;
+}
+
+.department__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.department__title {
+  text-align: left;
+}

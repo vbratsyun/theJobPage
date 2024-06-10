@@ -1,0 +1,13 @@
+.products-carousel__item {
+  display: none;
+  width: 165px;
+  height: 182px;
+  background-color: $background-photo;
+  border-radius: 10px;
+  border: 3px solid $base-background-black;
+  margin: 0 auto;
+
+  &--current {
+    display: block;
+  }
+}

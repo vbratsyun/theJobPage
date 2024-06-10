@@ -1,0 +1,9 @@
+.header {
+  background-color: $background-color;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 10px;
+}
