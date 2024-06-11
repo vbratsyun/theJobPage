@@ -1,15 +1,22 @@
 .about-us-list {
   display: flex;
   flex-direction: column;
-  row-gap: 35px;
+  row-gap: 34px;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 70px;
+  }
 }
 
 .about-us-list__container {
   display: flex;
   width: 80px;
-  height: 70px;
-  margin: 0 auto 15px;
+  height: 69px;
+  margin: 0 auto 14px;
   border: 2px solid $border-nums-color;
   border-radius: 5px;
   background-color: $base-background-black;
@@ -24,11 +31,16 @@
 }
 
 .about-us-list__text {
-  font-size: 16px;
+  font-size: 15.5px;
+  line-height: 19px;
   max-width: 78%;
   margin: 0 auto;
 
   &--city {
     max-width: 72%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
   }
 }

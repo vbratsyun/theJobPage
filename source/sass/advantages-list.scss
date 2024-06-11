@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 20px 1fr 25px 20px;
-  padding: 16.5px 0;
+  padding: 16.5px 0 14.8px;
 
   &::after {
     content: "";
@@ -21,8 +21,9 @@
 .advantages-list__button {
   grid-column: 3/4;
 }
+
 .advantages-list__title {
-  font-size: 18px;
+  font-size: 17.5px;
   font-weight: 700;
   margin: 0;
 }
@@ -32,4 +33,8 @@
   font-size: 18px;
   font-weight: inherit;
   margin: 16.5px 0 0;
+
+  &--open {
+    display: block;
+  }
 }

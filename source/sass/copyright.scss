@@ -1,5 +1,5 @@
 .copyright {
-  padding: 41px 0 51px;
+  padding: 44px 0 51px;
   text-align: center;
 }
 
@@ -12,6 +12,14 @@
 
 .copyright__text {
   font-weight: 700;
+  line-height: 19px;
+  margin: 0 auto 32px;
+}
+
+.copyright__requisites,
+.copyright__politics {
+  text-decoration: underline;
+  line-height: 20px;
 }
 
 .copyright__politics {

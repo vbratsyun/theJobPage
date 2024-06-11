@@ -1,21 +1,27 @@
 .promo {
   position: relative;
   text-align: center;
-  padding: 271px 0 45px 0;
+  padding: 272px 0 45px 0;
   background: url("../image/header-background.jpg") no-repeat;
-  background-position: 77% 34%;
-  background-size: 235%;
+  background-position: 75% 47%;
+  background-size: 242%;
   filter: drop-shadow(0 5px 3px rgba($background-white, 0.2));
+
+  @media (min-width: $desktop-width) {
+    background-size: cover;
+    background-position: 77% 62%;
+    filter: none;
+  }
 }
 
 .promo__title {
-  font-size: 30px;
+  font-size: 29.5px;
   color: $base-text-color;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .promo__slogan {
-  font-size: 18px;
+  font-size: 17.5px;
   font-weight: 700;
   margin-bottom: 35px;
 }

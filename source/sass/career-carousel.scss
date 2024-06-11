@@ -1,11 +1,6 @@
 .career-carousel__item {
   position: relative;
-  display: none;
   text-align: center;
-
-  &--current {
-    display: block;
-  }
 
   &::after {
     content: "";
@@ -18,34 +13,42 @@
     height: 13px;
     background: url(../image/line.svg) no-repeat;
   }
+
   &::before {
     content: "";
     position: absolute;
-    top: -112px;
+    top: -153px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 118px;
+    width: 80px;
     height: 80px;
     border-radius: 50%;
-    box-shadow: 0 -21px 110px 0 #7fce84;
+    box-shadow: 0 -96px 111px 0 #7fce84;
   }
+}
+
+.career-carousel__item:not(:nth-of-type(1)) {
+  display: none;
 }
 
 .career-carousel__image {
   position: relative;
   z-index: 2;
   display: block;
+  object-fit: contain;
   margin: 0 auto;
 }
 
 .career-carousel__name {
   font-size: 16px;
   font-weight: 700;
-  margin: 0;
+  text-align: center;
+  margin: 16px 0 3px;
 }
 
 .career-carousel__position {
-  margin: 0 auto 15px;
+  text-align: center;
+  margin: 0 auto 19px;
 }

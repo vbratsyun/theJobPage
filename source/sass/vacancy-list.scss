@@ -1,14 +1,14 @@
 .vacancy-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
 .vacancy-list__item {
   display: grid;
   grid-template-columns: 1fr 25px;
   align-items: start;
-  padding: 30px;
+  padding: 27px;
   border: 3px solid $title-color;
   border-radius: 30px;
 }
@@ -66,15 +66,23 @@
   position: relative;
   font-size: 18px;
   font-weight: 700;
+  letter-spacing: -0.8px;
   text-transform: uppercase;
   color: $nums-color;
   margin: 0;
 
   &--discussion {
     text-transform: none;
+    letter-spacing: normal;
   }
 }
 
 .vacancy-list__button {
-  margin-top: 25px;
+  position: relative;
+  top: 22px;
+}
+
+.vacancy-list__item:nth-of-type(2) .vacancy-list__button,
+.vacancy-list__item:nth-of-type(3) .vacancy-list__button {
+  top: 31px;
 }

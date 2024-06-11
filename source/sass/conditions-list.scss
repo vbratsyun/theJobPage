@@ -3,6 +3,10 @@
   font-size: 12px;
   font-weight: 700;
   width: 86%;
+
+  &--open {
+    display: block;
+  }
 }
 
 .conditions-list__name {

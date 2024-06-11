@@ -1,7 +1,15 @@
+.footer {
+  padding: 48px 0 0;
+}
+
 .footer__container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 38px;
+}
+
+.footer__title {
+  letter-spacing: 1.2px;
 }
 
 .footer__list {
@@ -9,7 +17,7 @@
 }
 
 .footer__social-list {
-  margin: 0 auto 50px;
+  margin: 9px auto 42px;
 }
 
 .footer__location {

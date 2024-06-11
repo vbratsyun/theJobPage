@@ -3,9 +3,14 @@
   flex-wrap: wrap;
   gap: 10px;
 
+  &--products {
+    gap: 4px;
+  }
+
   &--footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
 
@@ -14,7 +19,7 @@
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 11px;
-  line-height: 30px;
+  line-height: 24px;
   border: 3px solid $title-color;
   border-radius: 5px;
   text-align: center;
@@ -22,5 +27,9 @@
   &--current {
     background-color: $title-color;
     color: $background-black;
+  }
+
+  &--products {
+    padding: 0 32px;
   }
 }

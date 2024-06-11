@@ -1,0 +1,14 @@
+.modal {
+  position: relative;
+  width: 100%;
+}
+
+.modal__wrapper {
+  background-color: $base-background-black;
+  padding: 4px 20px;
+}
+
+.modal__close-button {
+  margin: 0;
+  margin-left: auto;
+}

@@ -1,5 +1,27 @@
+.phones-list {
+  @media (min-width: $desktop-width) {
+    justify-self: right;
+  }
+}
+
+.phones-list__item {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+  }
+}
+
 .phones-list__city {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    color: #979799;
+    margin-left: auto;
+  }
 }
 
 .phones-list__address {
@@ -9,4 +31,8 @@
 .phones-list__link {
   font-size: 9px;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+  }
 }

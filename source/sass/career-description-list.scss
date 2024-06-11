@@ -1,8 +1,14 @@
 .career-description-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 19px;
   text-align: left;
   list-style-type: disc;
   margin: 0 10px;
+}
+
+.career-description-list__item {
+  font-size: 13.5px;
+  margin-left: 19px;
+  line-height: 19px;
 }

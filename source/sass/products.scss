@@ -1,5 +1,5 @@
 .products {
-  padding: 45px 0;
+  padding: 47px 0 30px;
 }
 
 .products__container {
@@ -23,4 +23,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.products__swiper-pagination {
+  margin: -19px auto 0;
 }

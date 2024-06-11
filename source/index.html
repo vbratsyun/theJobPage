@@ -14,12 +14,19 @@
     />
     <title>Вакансии | Пестовский Лесокомбинат</title>
     <link href="css/style.min.css" rel="stylesheet" />
+    <link
+      rel="preload"
+      href="fonts/GothamProRegular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body class="page__body body">
     <header class="header">
-      <div class="header__wrapper wrapper">
-        <div class="nav-bar">
+      <div class="header__wrapper wrapper wrapper--header">
+        <div class="header__nav-bar nav-bar">
           <button class="nav-bar__toggle button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -92,7 +99,8 @@
               </div>
 
               <p class="about-us-list__text about-us-list__text--city">
-                Города присутствия: Санкт-Петербург и Москва
+                Города присутствия: <br />
+                Санкт-Петербург и Москва
               </p>
             </li>
             <li class="about-us-list__item">
@@ -227,7 +235,8 @@
                   <span
                     class="vacancy-list__salary vacancy-list__salary--discussion"
                   >
-                    Обсуждается на собеседовании</span
+                    Обсуждается <br />
+                    на собеседовании</span
                   >
                 </div>
 
@@ -348,7 +357,7 @@
               <div class="advantages-list__container">
                 <p class="advantages-list__title">Передовое рабочее место</p>
                 <p class="advantages-list__description">
-                  Комфортный офис в центре г. Санкт-Петербург, оборудованный
+                  Комфортный офис в центре г.Санкт-Петербург, оборудованный
                   передовыми технологиями. Твой рабочий компьютер может быть
                   даже в твоём смартфоне!
                 </p>
@@ -402,15 +411,17 @@
       <section class="products">
         <div class="products__container wrapper wrapper--products">
           <h2 class="products__title title">Продукты компании</h2>
-          <ul class="products__list tabs-list list">
-            <li class="tabs-list__item tabs-list__item--current">Бани</li>
-            <li class="tabs-list__item">Дома</li>
+          <ul class="products__list tabs-list list tabs-list--products">
+            <li
+              class="tabs-list__item tabs-list__item--current tabs-list__item--products"
+            >
+              Бани
+            </li>
+            <li class="tabs-list__item tabs-list__item--products">Дома</li>
           </ul>
           <div class="products__container">
             <ul class="products__carousel products-carousel list">
-              <li
-                class="products-carousel__item products-carousel__item--current"
-              ></li>
+              <li class="products-carousel__item"></li>
               <li class="products-carousel__item"></li>
               <li class="products-carousel__item"></li>
               <li class="products-carousel__item"></li>
@@ -454,7 +465,9 @@
             </div>
           </div>
           <div class="products__swiper-pagination swiper-pagination">
-            <p class="swiper-pagination__bullet">
+            <p
+              class="swiper-pagination__bullet swiper-pagination__bullet--current"
+            >
               <span class="visually-hidden">Первая картинка</span>
             </p>
             <p class="swiper-pagination__bullet">
@@ -463,9 +476,7 @@
             <p class="swiper-pagination__bullet">
               <span class="visually-hidden">Третья картинка</span>
             </p>
-            <p
-              class="swiper-pagination__bullet swiper-pagination__bullet--current"
-            >
+            <p class="swiper-pagination__bullet">
               <span class="visually-hidden">Четвертая картинка</span>
             </p>
             <p class="swiper-pagination__bullet">
@@ -475,7 +486,7 @@
         </div>
       </section>
       <section class="career">
-        <div class="career__box wrapper">
+        <div class="career__box">
           <h2 class="career__title title">Карьерный рост</h2>
           <div class="career__text-container">
             <p class="career__text">
@@ -483,13 +494,13 @@
               заслуженно поднимаются по карьерной лестнице.
             </p>
             <p class="career__text">
-              Мы ценим стремление к развитию и предоставляем все необходимые для
-              этого условия.
+              Мы ценим стремление к развитию <br />
+              и предоставляем все необходимые <br />для этого условия.
             </p>
           </div>
           <div class="career__container">
             <ul class="career__carousel career-carousel list">
-              <li class="career-carousel__item career-carousel__item--current">
+              <li class="career-carousel__item">
                 <picture>
                   <source
                     type="image/webp"
@@ -657,8 +668,8 @@
           </div>
           <div class="successes__container">
             <p class="successes__slogan">
-              Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом с
-              Нами!
+              Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом
+              <br />с Нами!
             </p>
             <button class="successes__button button" type="button">
               Присоединиться к команде
@@ -703,14 +714,18 @@
                 class="contacts-list__icon-box contacts-list__icon-box--location"
               ></span>
               <p class="contacts-list__location">
-                ул.Заозёрная, д.8 к.2, офис 202 (7 мин. пешком от метро
+                ул. Заозёрная, д. 8 к. 2, офис 202 <br />(7 мин. пешком от метро
                 Фрунзенская)
               </p>
             </li>
           </ul>
           <ul class="footer__social-list social-list list">
             <li class="social-list__item">
-              <a href="https://www.youtube.com/@pplk_ru" target="_blank">
+              <a
+                class="social-list__link link"
+                href="https://www.youtube.com/@pplk_ru"
+                target="_blank"
+              >
                 <svg class="social-list__icon" width="50" height="36">
                   <use xlink:href="image/sprite.svg#icon-youtube"></use>
                 </svg>
@@ -718,7 +733,11 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a href="https://vk.com/doma_i_bani_iz_brusa" target="_blank">
+              <a
+                class="social-list__link link social-list__link--vk"
+                href="https://vk.com/doma_i_bani_iz_brusa"
+                target="_blank"
+              >
                 <svg class="social-list__icon" width="42" height="42">
                   <use xlink:href="image/sprite.svg#icon-vk"></use>
                 </svg>
@@ -727,7 +746,11 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a href="https://t.me/plkombinat" target="_blank">
+              <a
+                class="social-list__link link social-list__link--telegram"
+                href="https://t.me/plkombinat"
+                target="_blank"
+              >
                 <svg class="social-list__icon" width="42" height="42">
                   <use xlink:href="image/sprite.svg#icon-telegram"></use>
                 </svg>
@@ -980,5 +1003,176 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal">
+        <div class="modal__wrapper">
+          <button
+            class="modal__close-button button button--modal"
+            type="button"
+          >
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <section class="application-file">
+          <h2 class="visually-hidden">Анкета</h2>
+          <div class="wrapper">
+            <h2 class="application-file__title title">Заполните анкету</h2>
+            <form
+              class="application-file__form application-form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <fieldset class="application-form__fieldset">
+                <legend class="visually-hidden">Персональный данные</legend>
+                <div>
+                  <label class="visually-hidden">ФИО</label>
+                  <input
+                    class="application-form__input"
+                    type="name"
+                    name="name"
+                    placeholder="Ф.И.О"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="visually-hidden">Телефон</label>
+                  <input
+                    class="application-form__input"
+                    type="tel"
+                    name="tel"
+                    placeholder="Телефон"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset class="application-form__fieldset">
+                <legend class="visually-hidden">Выбор вакансии</legend>
+                <label class="application-form__label" for="response"
+                  >Отклик на вакансию</label
+                >
+                <select
+                  class="application-form__select application-form__input"
+                  name="response"
+                  id="response"
+                  required
+                >
+                  <option value="foreman">Выберите вакансию</option>
+                  <option value="foreman">Прораб</option>
+                  <option value="supplier">Специалист службы снабжения</option>
+                  <option value="logistician">Логист</option>
+                  <option value="designer">Проектировщик</option>
+                </select>
+              </fieldset>
+
+              <fieldset
+                class="application-form__fieldset application-form__fieldset--resume"
+              >
+                <legend class="visually-hidden">Прикрепите резюме</legend>
+                <label class="application-form__label" for="resume"
+                  >Ваше резюме</label
+                >
+                <p class="application-form__tip">
+                  <sub
+                    >Есть резюме в формате .pdf или .doc? Приложите и отправьте
+                    его нам.</sub
+                  >
+                </p>
+                <input
+                  class="application-form__upload-file visually-hidden"
+                  type="file"
+                  name="resume"
+                  multiple
+                  accept=".pdf, .doc"
+                  id="upload-file"
+                  required
+                />
+
+                <label
+                  class="application-form__upload-label button"
+                  for="upload-file"
+                  >Загрузить файл</label
+                >
+              </fieldset>
+
+              <fieldset
+                class="application-form__fieldset application-form__fieldset--approval"
+              >
+                <legend class="visually-hidden">
+                  Подтвердите согласие на обработку данных
+                </legend>
+                <label class="application-form__control">
+                  <input
+                    class="visually-hidden application-form__control-input"
+                    type="checkbox"
+                    name="approval"
+                    required
+                  />
+                  <svg
+                    class="application-form__control-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="7"
+                    height="7"
+                    viewBox="0 0 10 10"
+                    fill="#fff"
+                  >
+                    <path d="M10 0 3.1 6.6 0 3.6v3.3L3.2 10 10 3.3V0Z"></path>
+                  </svg>
+                  <span class="application-form__control-mark"></span>
+                  <p class="application-form__control-label">
+                    Я прочитал(а), ознакомился(лась) и согласен(на) <br />с
+                    Политикой конфиденциальности, Согласием на обработку
+                    персональных данных физическим лицом. Я осознаю, <br />что
+                    даю Согласие на обработку персональных данных для
+                    использования предоставляемых возможностей Веб-сервиса.
+                    <span class="application-form__control-text"
+                      >Я достиг(ла) 18-летнего возраста</span
+                    >
+                  </p>
+                </label>
+              </fieldset>
+              <button class="application-form__submit button" type="submit">
+                Отправить анкету
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="modal-container modal-container--sent">
+      <div class="modal">
+        <div class="modal__wrapper">
+          <button
+            class="modal__close-button button button--modal button--modal-sent"
+            type="button"
+          >
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <section class="application-file application-file--sent">
+          <h2 class="visually-hidden">Отправка анкеты</h2>
+          <div class="wrapper">
+            <h2 class="application-file__title title">Анкета отправлена</h2>
+            <div class="application-file__container">
+              <p class="application-file__text">
+                Благодарим <br />за ваш отклик и интерес.
+              </p>
+              <p class="application-file__text application-file__text--subtext">
+                Мы изучим вашу анкету и свяжемся с вами в течении 2х дней.
+              </p>
+            </div>
+
+            <a class="application-file__link button link" href="index.html">
+              На главную
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="js/open-list.js"></script>
+    <script src="js/career-carousel.js"></script>
+    <script src="js/products-carousel.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

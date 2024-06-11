@@ -1,8 +1,21 @@
 .wrapper {
   margin: 0 20px;
 
+  &--header {
+    margin: 2px 10px;
+  }
+
   &--advantages,
   &--products {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 36.5px;
+
+    &--advantages,
+    &--products {
+      margin: 0;
+    }
   }
 }

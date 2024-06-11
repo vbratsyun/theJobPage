@@ -7,11 +7,13 @@
   border: none;
   border-radius: 30px;
   background-color: $background-color-button;
-  padding: 10px 36px;
+  padding: 13px 36px;
   margin: 0 auto;
   cursor: pointer;
 
-  &--open {
+  &--open,
+  &--close,
+  &--modal {
     position: relative;
     background-color: $nums-color;
     width: 25px;
@@ -30,6 +32,28 @@
       width: 15px;
       height: 15px;
       background: url("../image/icon-info-more.svg") no-repeat;
+    }
+  }
+
+  &--close {
+    &::before {
+      width: 23px;
+      height: 22px;
+      background: url("../image/icon-close.svg") no-repeat;
+    }
+  }
+
+  &--modal {
+    background-color: transparent;
+    width: 36px;
+    height: 36px;
+    left: 6px;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+      background: url("../image/icon-close.svg") no-repeat;
+      background-size: cover;
     }
   }
 }
