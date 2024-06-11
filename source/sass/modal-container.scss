@@ -1,0 +1,21 @@
+.modal-container {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 763px;
+  background: #262626;
+  z-index: 4;
+  visibility: hidden;
+
+  &--open {
+    visibility: visible;
+  }
+
+  &--sent {
+    height: 640px;
+  }
+}

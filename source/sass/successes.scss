@@ -1,0 +1,42 @@
+.successes {
+  padding: 45px 0 31px;
+  background: url("../image/background-successes-mobile.svg") no-repeat,
+    linear-gradient(120deg, #767e7700, #003e0b6e, #767e7700);
+  background-position: 50% 48%;
+  background-size: contain;
+}
+
+.successes__box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 137px;
+}
+
+.successes__text {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.successes__container {
+  padding: 20px 26.5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  border: 3px solid #36853b;
+  filter: drop-shadow(0 0 5px #36853b);
+}
+
+.successes__slogan {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto 23px;
+  letter-spacing: -0.5px;
+}
+
+.successes__button {
+  padding: 13px 34px;
+}

@@ -1,0 +1,30 @@
+.products {
+  padding: 47px 0 30px;
+}
+
+.products__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+}
+
+.products__title {
+  padding: 0 20px;
+}
+
+.products__list {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.products__controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.products__swiper-pagination {
+  margin: -19px auto 0;
+}

@@ -1,0 +1,139 @@
+.application-file {
+  padding: 45px 0;
+}
+
+.application-form__fieldset {
+  padding: 0;
+  margin: 0 0 20px;
+  border: none;
+
+  &--resume {
+    margin-bottom: 36px;
+  }
+
+  &--approval {
+    margin-bottom: 16px;
+  }
+}
+
+.application-file__title {
+  margin-bottom: 39px;
+}
+
+.application-form__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 14px 10px;
+  border: none;
+  border-bottom: 3px solid $title-color;
+  font-size: 19px;
+  color: $title-color;
+  background-color: transparent;
+}
+
+.application-form__label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.application-form__select {
+  background-image: url("../image/icon-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+  appearance: none;
+}
+
+.application-form__tip {
+  font-size: 11.5px;
+  width: 67%;
+  margin: 12px 0 17px 10px;
+}
+
+.application-form__upload-label {
+  background-color: $nums-color;
+  max-width: 184px;
+  box-sizing: border-box;
+  padding: 13px 33px;
+  margin: 0;
+}
+
+.application-form__control {
+  position: relative;
+}
+
+.application-form__control-mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 0.5px solid $background-photo;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: $background-grey;
+}
+
+.application-form__control-icon {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 3px;
+}
+
+.application-form__control-label {
+  font-size: 9.5px;
+  line-height: 15px;
+  margin: 0 0 20px 17px;
+}
+
+.application-form__control-text {
+  display: block;
+  margin-top: 13px;
+}
+
+.application-form__control-input:checked + .application-form__control-icon {
+  display: block;
+}
+
+.application-file__container {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -317px;
+    left: 3px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    background: url("../image/icon-sent.svg") no-repeat;
+  }
+}
+
+.application-file__text {
+  font-size: 18px;
+  font-weight: 700;
+  width: 75%;
+  text-align: center;
+  letter-spacing: -0.6px;
+  margin: 221px auto 0;
+
+  &--subtext {
+    letter-spacing: normal;
+    margin: 18px auto 101px;
+  }
+}
+
+.application-file__link {
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}

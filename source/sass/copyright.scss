@@ -1,0 +1,28 @@
+.copyright {
+  padding: 44px 0 51px;
+  text-align: center;
+}
+
+.copyright__container {
+  display: flex;
+  flex-direction: column;
+  width: 259px;
+  margin: 0 auto;
+}
+
+.copyright__text {
+  font-weight: 700;
+  line-height: 19px;
+  margin: 0 auto 32px;
+}
+
+.copyright__requisites,
+.copyright__politics {
+  text-decoration: underline;
+  line-height: 20px;
+}
+
+.copyright__politics {
+  font-size: 12px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,50 @@
+.header {
+  background-color: $background-color;
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-grey;
+  }
+}
+
+.header__nav-bar {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
+.header__logo {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  left: 24px;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin: 0;
+  }
+}
+
+.header__nav-bar {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.header__phones-list {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
