@@ -1,3 +1,38 @@
+.nav-bar__wrapper {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 270px;
+  display: flex;
+  height: 100vh;
+  background-color: $background-color;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+}
+
+.nav-bar__site-list {
+  margin: 40px 0;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+  }
+}
+
 .nav-bar__toggle {
   width: 36px;
   height: 36px;
@@ -16,6 +51,37 @@
     background-color: $base-text-color;
     box-shadow: 0 5px 0 0 $base-text-color, 0 10px 0 0 $base-text-color;
   }
+
+  &--opened {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 16px;
+      width: 24px;
+      height: 3px;
+      border-radius: 2px;
+      background-color: $base-text-color;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nav-bar__wrapper-button {
+  background-color: $nums-color;
 
   @media (min-width: $desktop-width) {
     display: none;
