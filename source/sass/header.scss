@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 2;
   background-color: $background-color;
 
   @media (min-width: $desktop-width) {

@@ -2,102 +2,8 @@
   padding: 45px 0;
 }
 
-.application-form__fieldset {
-  padding: 0;
-  margin: 0 0 20px;
-  border: none;
-
-  &--resume {
-    margin-bottom: 36px;
-  }
-
-  &--approval {
-    margin-bottom: 16px;
-  }
-}
-
 .application-file__title {
   margin-bottom: 39px;
-}
-
-.application-form__input {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 14px 10px;
-  border: none;
-  border-bottom: 3px solid $title-color;
-  font-size: 19px;
-  color: $title-color;
-  background-color: transparent;
-}
-
-.application-form__label {
-  font-size: 18px;
-  font-weight: 700;
-  margin-left: 10px;
-}
-
-.application-form__select {
-  background-image: url("../image/icon-select.svg");
-  background-repeat: no-repeat;
-  background-position: right 11px center;
-  appearance: none;
-}
-
-.application-form__tip {
-  font-size: 11.5px;
-  width: 67%;
-  margin: 12px 0 17px 10px;
-}
-
-.application-form__upload-label {
-  background-color: $nums-color;
-  max-width: 184px;
-  box-sizing: border-box;
-  padding: 13px 33px;
-  margin: 0;
-}
-
-.application-form__control {
-  position: relative;
-}
-
-.application-form__control-mark {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 12px;
-  height: 12px;
-  border: 0.5px solid $background-photo;
-  border-radius: 3px;
-  box-sizing: border-box;
-  background-color: $background-grey;
-}
-
-.application-form__control-icon {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  top: 2px;
-  left: 3px;
-}
-
-.application-form__control-label {
-  font-size: 9.5px;
-  line-height: 15px;
-  margin: 0 0 20px 17px;
-}
-
-.application-form__control-text {
-  display: block;
-  margin-top: 13px;
-}
-
-.application-form__control-input:checked + .application-form__control-icon {
-  display: block;
 }
 
 .application-file__container {
@@ -136,4 +42,8 @@
   box-sizing: border-box;
   text-align: center;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }

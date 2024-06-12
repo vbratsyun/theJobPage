@@ -30,18 +30,31 @@
           <button class="nav-bar__toggle button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="nav-bar__wrapper">
+          <div class="nav-bar__wrapper nav-bar__wrapper--closed">
             <ul class="nav-bar__site-list site-list list">
               <li class="site-list__item">
+                <svg class="site-list__icon" width="25" height="25">
+                  <use xlink:href="image/sprite.svg#home"></use>
+                </svg>
                 <a class="site-list__link link">Главная</a>
               </li>
               <li class="site-list__item">
+                <svg class="site-list__icon" width="25" height="25">
+                  <use xlink:href="image/sprite.svg#portfolio"></use>
+                </svg>
                 <a class="site-list__link link" href="#">Дома</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--last">
+                <svg class="site-list__icon" width="25" height="25">
+                  <use xlink:href="image/sprite.svg#projects"></use>
+                </svg>
+
                 <a class="site-list__link link" href="#">Бани</a>
               </li>
             </ul>
+            <button class="nav-bar__wrapper-button button" type="button">
+              Заказать звонок
+            </button>
           </div>
         </div>
 
@@ -99,8 +112,8 @@
               </div>
 
               <p class="about-us-list__text about-us-list__text--city">
-                Города присутствия: <br />
-                Санкт-Петербург и Москва
+                Города присутствия: <br class="br" />&ensp; Санкт-Петербург и
+                Москва
               </p>
             </li>
             <li class="about-us-list__item">
@@ -235,8 +248,7 @@
                   <span
                     class="vacancy-list__salary vacancy-list__salary--discussion"
                   >
-                    Обсуждается <br />
-                    на собеседовании</span
+                    Обсуждается <br class="br" />&ensp; на собеседовании</span
                   >
                 </div>
 
@@ -429,35 +441,15 @@
             </ul>
             <div class="products__controls controls">
               <button class="controls__button controls__button-prev button">
-                <svg
-                  class="controls__button-icon"
-                  width="18"
-                  height="30"
-                  viewBox="0 0 18 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.52663 15.0154L16.6369 26.25C17.0547 26.6678 17.2438 27.124 17.2636 27.75C17.2833 28.376 17.0942 28.9159 16.6369 29.3733C16.219 29.7911 15.6873 30 15.0415 30C14.3958 30 13.8641 29.7911 13.4462 29.3733L0.683706 16.6107C0.227902 16.1549 0 15.6232 0 15.0154C0 14.4077 0.227902 13.8759 0.683706 13.4201L13.4462 0.657585C13.8641 0.239765 14.3867 0.0209789 15.0142 0.00122643C15.6417 -0.0185242 16.1826 0.200262 16.6369 0.657585C17.0547 1.07541 17.2636 1.60718 17.2636 2.2529C17.2636 2.89862 17.0547 3.4304 16.6369 3.84822L5.52663 15.0154Z"
-                    fill="white"
-                  />
+                <svg class="controls__button-icon" width="18" height="30">
+                  <use xlink:href="image/sprite.svg#icon-arrow-previous"></use>
                 </svg>
 
                 <span class="visually-hidden">Предыдущая картинка</span>
               </button>
               <button class="controls__button controls__button-forward button">
-                <svg
-                  class="controls__button-icon"
-                  width="18"
-                  height="30"
-                  viewBox="0 0 18 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.0033 15.0154L0.893105 26.25C0.475283 26.6678 0.286123 27.124 0.266371 27.75C0.24662 28.376 0.43578 28.9159 0.893105 29.3733C1.31092 29.7911 1.8427 30 2.48842 30C3.13414 30 3.66591 29.7911 4.08374 29.3733L16.8463 16.6107C17.3021 16.1549 17.53 15.6232 17.53 15.0154C17.53 14.4077 17.3021 13.8759 16.8463 13.4201L4.08374 0.657585C3.66591 0.239765 3.14326 0.0209789 2.51577 0.00122643C1.88828 -0.0185242 1.34739 0.200262 0.893105 0.657585C0.475283 1.07541 0.266371 1.60718 0.266371 2.2529C0.266371 2.89862 0.475283 3.4304 0.893105 3.84822L12.0033 15.0154Z"
-                    fill="white"
-                  />
+                <svg class="controls__button-icon" width="18" height="30">
+                  <use xlink:href="image/sprite.svg#icon-arrow-next"></use>
                 </svg>
 
                 <span class="visually-hidden">Следующая картинка</span>
@@ -494,8 +486,9 @@
               заслуженно поднимаются по карьерной лестнице.
             </p>
             <p class="career__text">
-              Мы ценим стремление к развитию <br />
-              и предоставляем все необходимые <br />для этого условия.
+              Мы ценим стремление к развитию <br class="br" />&ensp; и
+              предоставляем все необходимые <br class="br" />&ensp; для этого
+              условия.
             </p>
           </div>
           <div class="career__container">
@@ -615,18 +608,8 @@
               <button
                 class="controls__button controls__button-prev controls__button-prev--career button"
               >
-                <svg
-                  class="controls__button-icon"
-                  width="18"
-                  height="30"
-                  viewBox="0 0 18 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.52663 15.0154L16.6369 26.25C17.0547 26.6678 17.2438 27.124 17.2636 27.75C17.2833 28.376 17.0942 28.9159 16.6369 29.3733C16.219 29.7911 15.6873 30 15.0415 30C14.3958 30 13.8641 29.7911 13.4462 29.3733L0.683706 16.6107C0.227902 16.1549 0 15.6232 0 15.0154C0 14.4077 0.227902 13.8759 0.683706 13.4201L13.4462 0.657585C13.8641 0.239765 14.3867 0.0209789 15.0142 0.00122643C15.6417 -0.0185242 16.1826 0.200262 16.6369 0.657585C17.0547 1.07541 17.2636 1.60718 17.2636 2.2529C17.2636 2.89862 17.0547 3.4304 16.6369 3.84822L5.52663 15.0154Z"
-                    fill="white"
-                  />
+                <svg class="controls__button-icon" width="18" height="30">
+                  <use xlink:href="image/sprite.svg#icon-arrow-previous"></use>
                 </svg>
 
                 <span class="visually-hidden">Предыдущая картинка</span>
@@ -634,18 +617,8 @@
               <button
                 class="controls__button controls__button-forward controls__button-forward--career button"
               >
-                <svg
-                  class="controls__button-icon"
-                  width="18"
-                  height="30"
-                  viewBox="0 0 18 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.0033 15.0154L0.893105 26.25C0.475283 26.6678 0.286123 27.124 0.266371 27.75C0.24662 28.376 0.43578 28.9159 0.893105 29.3733C1.31092 29.7911 1.8427 30 2.48842 30C3.13414 30 3.66591 29.7911 4.08374 29.3733L16.8463 16.6107C17.3021 16.1549 17.53 15.6232 17.53 15.0154C17.53 14.4077 17.3021 13.8759 16.8463 13.4201L4.08374 0.657585C3.66591 0.239765 3.14326 0.0209789 2.51577 0.00122643C1.88828 -0.0185242 1.34739 0.200262 0.893105 0.657585C0.475283 1.07541 0.266371 1.60718 0.266371 2.2529C0.266371 2.89862 0.475283 3.4304 0.893105 3.84822L12.0033 15.0154Z"
-                    fill="white"
-                  />
+                <svg class="controls__button-icon" width="18" height="30">
+                  <use xlink:href="image/sprite.svg#icon-arrow-next"></use>
                 </svg>
 
                 <span class="visually-hidden">Следующая картинка</span>
@@ -669,7 +642,7 @@
           <div class="successes__container">
             <p class="successes__slogan">
               Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом
-              <br />с Нами!
+              <br class="br" />&ensp; с Нами!
             </p>
             <button class="successes__button button" type="button">
               Присоединиться к команде
@@ -714,8 +687,8 @@
                 class="contacts-list__icon-box contacts-list__icon-box--location"
               ></span>
               <p class="contacts-list__location">
-                ул. Заозёрная, д. 8 к. 2, офис 202 <br />(7 мин. пешком от метро
-                Фрунзенская)
+                ул. Заозёрная, д. 8 к. 2, офис 202 <br class="br" />&ensp; (7
+                мин. пешком от метро Фрунзенская)
               </p>
             </li>
           </ul>
@@ -1120,11 +1093,12 @@
                   </svg>
                   <span class="application-form__control-mark"></span>
                   <p class="application-form__control-label">
-                    Я прочитал(а), ознакомился(лась) и согласен(на) <br />с
-                    Политикой конфиденциальности, Согласием на обработку
-                    персональных данных физическим лицом. Я осознаю, <br />что
-                    даю Согласие на обработку персональных данных для
-                    использования предоставляемых возможностей Веб-сервиса.
+                    Я прочитал(а), ознакомился(лась) и согласен(на)
+                    <br class="br" />&ensp; с Политикой конфиденциальности,
+                    Согласием на обработку персональных данных физическим лицом.
+                    Я осознаю, <br class="br" />&ensp; что даю Согласие на
+                    обработку персональных данных для использования
+                    предоставляемых возможностей Веб-сервиса.
                     <span class="application-form__control-text"
                       >Я достиг(ла) 18-летнего возраста</span
                     >
@@ -1156,7 +1130,7 @@
             <h2 class="application-file__title title">Анкета отправлена</h2>
             <div class="application-file__container">
               <p class="application-file__text">
-                Благодарим <br />за ваш отклик и интерес.
+                Благодарим <br class="br" />&ensp; за ваш отклик и интерес.
               </p>
               <p class="application-file__text application-file__text--subtext">
                 Мы изучим вашу анкету и свяжемся с вами в течении 2х дней.
@@ -1170,6 +1144,7 @@
         </section>
       </div>
     </div>
+    <script src="js/page-nav.js"></script>
     <script src="js/open-list.js"></script>
     <script src="js/career-carousel.js"></script>
     <script src="js/products-carousel.js"></script>
