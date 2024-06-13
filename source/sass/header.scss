@@ -11,6 +11,7 @@
 .header__nav-bar {
   @media (min-width: $desktop-width) {
     margin: 0 auto;
+    order: 2;
   }
 }
 
@@ -36,12 +37,6 @@
   @media (min-width: $desktop-width) {
     order: 1;
     margin: 0;
-  }
-}
-
-.header__nav-bar {
-  @media (min-width: $desktop-width) {
-    order: 2;
   }
 }
 

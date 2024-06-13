@@ -5,16 +5,10 @@
   left: 0;
   width: 270px;
   display: flex;
+  flex-direction: column;
+  gap: 40px 10px;
   height: 100vh;
   background-color: $background-color;
-
-  &--closed {
-    display: none;
-  }
-
-  &--opened {
-    display: block;
-  }
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -26,7 +20,7 @@
 }
 
 .nav-bar__site-list {
-  margin: 40px 0;
+  margin: 40px 0 0;
 
   @media (min-width: $desktop-width) {
     margin-top: 40px;
@@ -52,29 +46,6 @@
     box-shadow: 0 5px 0 0 $base-text-color, 0 10px 0 0 $base-text-color;
   }
 
-  &--opened {
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 18px;
-      left: 16px;
-      width: 24px;
-      height: 3px;
-      border-radius: 2px;
-      background-color: $base-text-color;
-    }
-
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-  }
-
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -86,4 +57,47 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.nav-bar--opened .nav-bar__wrapper {
+  display: flex;
+}
+
+.nav-bar--opened .nav-bar__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 24px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $base-text-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.nav-bar--nojs .nav-bar__toggle {
+  display: none;
+}
+
+.nav-bar--closed .nav-bar__wrapper {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.nav-bar--nojs .nav-bar__wrapper {
+  display: flex;
 }
