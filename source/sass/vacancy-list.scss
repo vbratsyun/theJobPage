@@ -11,12 +11,20 @@
   padding: 27px;
   border: 3px solid $title-color;
   border-radius: 30px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 45px;
+  }
 }
 
 .vacancy-list__box {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    gap: 25px;
+  }
 }
 
 .vacancy-list__container {
@@ -24,6 +32,10 @@
   grid-template-columns: 25px 1fr;
   align-items: center;
   gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 45px 1fr;
+  }
 }
 
 .vacancy-list__icon-box {
@@ -54,12 +66,28 @@
   &--price::before {
     background: url("../image/icon-info-price.svg") no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+
+    &--vacancy::before,
+    &--price::before {
+      width: 24px;
+      height: 24px;
+      background-size: cover;
+    }
+  }
 }
 
 .vacancy-list__name {
   font-size: 18px;
   font-weight: 700;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+  }
 }
 
 .vacancy-list__salary {
@@ -74,6 +102,10 @@
   &--discussion {
     text-transform: none;
     letter-spacing: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
   }
 }
 
