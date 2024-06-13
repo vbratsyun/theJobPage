@@ -1,14 +1,40 @@
 .department {
   padding: 45px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0;
+  }
 }
 
 .department__container {
   display: flex;
   flex-direction: column;
   row-gap: 35px;
+
+  @media (min-width: $desktop-width) {
+    row-gap: 45px;
+  }
+}
+
+.department__list {
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+.department__vacancy-list {
+  @media (min-width: $desktop-width) {
+    width: 775px;
+    margin: 0 auto;
+  }
 }
 
 .department__title {
   text-align: left;
   letter-spacing: -0.8px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }

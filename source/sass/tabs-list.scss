@@ -12,6 +12,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .tabs-list__item {
@@ -31,5 +36,11 @@
 
   &--products {
     padding: 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12.5px 30px;
   }
 }

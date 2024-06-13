@@ -1,0 +1,52 @@
+.button-more {
+  position: relative;
+  display: block;
+  background-color: $nums-color;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 23px;
+    height: 22px;
+    background: url("../image/icon-close.svg") no-repeat;
+  }
+
+  &--close {
+    &::before {
+      width: 15px;
+      height: 15px;
+      background: url("../image/icon-info-more.svg") no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      width: 33px;
+      height: 33px;
+      background-size: cover;
+    }
+
+    &--close {
+      &::before {
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+      }
+    }
+  }
+}
