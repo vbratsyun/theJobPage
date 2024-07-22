@@ -38,12 +38,8 @@
 }
 
 .application-file__link {
-  width: 50%;
+  width: 184px;
   box-sizing: border-box;
   text-align: center;
   margin: 0 auto;
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
 }

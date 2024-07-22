@@ -15,4 +15,8 @@
   @media (min-width: $desktop-width) {
     row-gap: 80px;
   }
+
+  @media (min-width: 1440px) {
+    max-width: 1300px;
+  }
 }
