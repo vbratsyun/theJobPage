@@ -4,7 +4,7 @@
   padding: 272px 0 45px 0;
   background: url("../image/header-background.jpg") no-repeat;
   background-position: 75% 47%;
-  background-size: 242%;
+  background-size: cover;
   filter: drop-shadow(0 5px 3px rgba($background-white, 0.2));
 
   @media (min-width: $desktop-width) {

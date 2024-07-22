@@ -3,6 +3,13 @@
   background-color: $background-color;
 }
 
+.advantages__container {
+  @media (min-width: $desktop-width) {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+}
+
 .advantages__title {
   margin: 0 10px 20px;
 }

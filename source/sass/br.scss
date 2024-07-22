@@ -1,7 +1,11 @@
 .br {
-  display: block;
+  display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: 388px) {
     display: none;
   }
 }
