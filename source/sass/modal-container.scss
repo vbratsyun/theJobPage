@@ -6,16 +6,13 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 763px;
+  height: 100vh;
   background: #262626;
   z-index: 4;
   visibility: hidden;
+  overflow-y: auto;
 
   &--open {
     visibility: visible;
-  }
-
-  &--sent {
-    height: 640px;
   }
 }
